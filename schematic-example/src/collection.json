@@ -1,9 +1,11 @@
 {
   "$schema": "../node_modules/@angular-devkit/schematics/collection-schema.json",
+  "extends": ["@schematics/angular"],
   "schematics": {
     "schematic-example": {
       "description": "A blank schematic.",
-      "factory": "./schematic-example/index#schematicExample"
+      "factory": "./schematic-example/index#schematicExample",
+      "schema": "./schematic-example/schema.json"
     }
   }
 }

@@ -1,0 +1,18 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "SchematicExample",
+    "title": "ng new domain schema",
+    "type": "object",
+    "description": "Add a new domain",
+    "properties": {
+        "name": {
+            "type": "string",
+            "description": "Name of the new domain",
+            "x-prompt": "Name:",
+            "$default": {
+                "$source": "argv",
+                "index": 0
+            }
+        }
+    }
+}
